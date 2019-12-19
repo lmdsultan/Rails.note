@@ -54,10 +54,20 @@ root to: "home#index"
 
 1- controller
 rails g controller Cars index show edit new
+
 2- resources
 resources :cares
+
 3 - Model
 raild g model Cars name:string year:string color:string
+
 4- Migration
 rails g migration AddSomeColumn 
 add_column :nameoftable, :nameofcolumn, :type
+
+
+resources :artists do 
+  resources :songs
+end
+
+
